@@ -1,6 +1,6 @@
 # dsh-web-mobile-pmsfh
 
-**给 DeepSeek Harness 一个移动端的对话页面。** 移动设备打开主站自动进入，会话、聊天、附件、审批全在一个为窄屏重做的界面里；桌面端 UI 与主仓库零改动。
+**给 DeepSeek Harness 一个专用的移动端页面。** 移动设备打开主站自动进入，会话、聊天、附件、审批都在这个为窄屏设计的独立界面里；桌面端 UI 与主仓库零改动。
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![topic](https://img.shields.io/badge/topic-dsh--plugin-amber)](https://github.com/topics/dsh-plugin)
@@ -8,7 +8,9 @@
 
 ## 是什么
 
-DSH 的官方 Web UI 按桌面布局设计，侧边栏、悬浮输入框、文件选择在窄屏移动设备上都不顺手。这个插件在 `/dsh-web-mobile-pmsfh/` 下挂一套独立的移动页，直接调 DSH 自己的接口，不加载官方前端，也不改官方代码，桌面端完全不介入
+`dsh-web-mobile-pmsfh` 是 DSH 的移动端页面插件：在 `/dsh-web-mobile-pmsfh/` 下挂一套独立的移动页，直接调 DSH 自己的接口，不加载官方前端，也不改官方代码，桌面端完全不介入
+
+DSH 的官方 Web UI 按桌面布局设计，侧边栏、悬浮输入框、文件选择在窄屏移动设备上都不顺手。
 
 - 触摸 + 窄屏 ≤768px 的移动设备访问主站时，自动进入移动页
 - 想用桌面版：列表底部「进入桌面版」，只对当前这次浏览生效，重新打开还是移动页
@@ -59,7 +61,7 @@ DSH 的官方 Web UI 按桌面布局设计，侧边栏、悬浮输入框、文�
 
 ```sh
 git clone https://github.com/renlang119/dsh-web-mobile-pmsfh.git
-dsh plugin --profile web add /path/to/dsh-web-mobile-pmsfh
+dsh plugin --profile web add ./dsh-web-mobile-pmsfh
 sudo systemctl restart dsh-web
 ```
 
