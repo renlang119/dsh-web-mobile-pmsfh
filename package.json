@@ -1,6 +1,6 @@
 {
   "name": "dsh-web-mobile-pmsfh",
-  "version": "3.2.5",
+  "version": "3.2.6",
   "type": "module",
   "license": "MIT",
   "engines": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/renlang119/dsh-web-mobile-pmsfh.git"
   },
-  "description": "Mobile-first standalone page for DeepSeek Harness (DSH): a self-contained chat UI at /dsh-web-mobile-pmsfh/ speaking DSH's remote protocol, with chat attachments and workspace file browse/download via official APIs. Desktop UI untouched, zero core changes.",
+  "description": "A standalone mobile page for DeepSeek Harness with conversations, attachments, approvals and workspace file browsing. Desktop UI untouched.",
   "files": [
     "lib/",
     "client/",
